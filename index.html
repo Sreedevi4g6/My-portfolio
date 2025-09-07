@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beere Sreedevi - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-white shadow-md">
+    <div class="container mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
+      <h1 class="text-3xl font-bold">Beere Sreedevi</h1>
+      <nav class="mt-4 md:mt-0">
+        <a href="#about" class="px-4 hover:text-yellow-300">About</a>
+        <a href="#skills" class="px-4 hover:text-yellow-300">Skills</a>
+        <a href="#projects" class="px-4 hover:text-yellow-300">Projects</a>
+        <a href="#contact" class="px-4 hover:text-yellow-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-12 bg-white shadow">
+    <!-- Profile Picture -->
+    <div class="flex justify-center mb-6">
+      <img src="sree.jpg" alt="Beere Sreedevi" 
+           class="w-40 h-40 rounded-full border-4 border-gray-300 shadow-lg object-cover">
+    </div>
+
+    <h2 class="text-2xl md:text-4xl font-bold text-gray-900">Recent Graduate & Fresher</h2>
+    <p class="mt-4 max-w-2xl mx-auto text-gray-600">
+      Aspiring Software Engineer with strong foundation in DSA, OOP, MySQL, and Python.  
+      Passionate about creating scalable and efficient solutions for real-world problems.
+    </p>
+    <div class="mt-6 flex justify-center gap-4">
+      <a href="https://www.linkedin.com/in/bsreedevi24/" target="_blank" class="bg-gray-700 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-900"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/sreedevi4g6" target="_blank" class="bg-gray-700 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-900"><i class="fab fa-github"></i> GitHub</a>
+      <a href="Beeresridevi_resume.pdf" download class="bg-green-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-700"><i class="fas fa-file-download"></i> Resume</a>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="about" class="container mx-auto px-6 py-12">
+    <h3 class="text-2xl font-bold mb-4">Education</h3>
+    <ul class="list-disc pl-6 text-gray-700">
+      <li><strong>B.Tech in ECE</strong>, Annamacharya Institute of Technology and Sciences (2021–2025), Percentage: 78%</li>
+      <li><strong>Intermediate (MPC)</strong>, Sri Sai Junior Girls College (2019–2021), Percentage: 82%</li>
+      <li><strong>SSC</strong>, Vishwa Bharathi English Medium High School (2018–2019), Percentage: 88%</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-50 py-12">
+    <div class="container mx-auto px-6">
+      <h3 class="text-2xl font-bold mb-4">Technical Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="p-4 bg-white shadow rounded-lg">Python</div>
+        <div class="p-4 bg-white shadow rounded-lg">MySQL</div>
+        <div class="p-4 bg-white shadow rounded-lg">HTML</div>
+        <div class="p-4 bg-white shadow rounded-lg">CSS</div>
+        <div class="p-4 bg-white shadow rounded-lg">Data Structures</div>
+        <div class="p-4 bg-white shadow rounded-lg">Algorithms</div>
+        <div class="p-4 bg-white shadow rounded-lg">OOP</div>
+        <div class="p-4 bg-white shadow rounded-lg">DBMS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container mx-auto px-6 py-12">
+    <h3 class="text-2xl font-bold mb-6">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      
+      <!-- Project 1 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">Optimized N-Bit Digital Comparator Design</h4>
+        <p class="text-gray-600 mb-3">Designed comparator to reduce power and area usage. (Academic Project)</p>
+        <button onclick="openModal('modal1')" class="text-gray-700 hover:underline font-medium">
+          Learn more
+        </button>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">Python To-Do List Application</h4>
+        <p class="text-gray-600 mb-3">Command-line app with add, update, and remove tasks. Used lists, dictionaries, and exception handling.</p>
+        <button onclick="openModal('modal2')" class="text-gray-700 hover:underline font-medium">
+          Learn more
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal 1 -->
+  <div id="modal1" class="fixed inset-0 hidden bg-black bg-opacity-50 flex items-center justify-center z-50" onclick="closeModal('modal1')">
+    <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6" onclick="event.stopPropagation()">
+      <h2 class="text-xl font-bold mb-4">Optimized N-Bit Digital Comparator Design</h2>
+      <p class="text-gray-700">
+        This project focuses on creating an optimized digital comparator that is efficient and
+        cost-effective. By improving the circuit design, the comparator consumes less power and
+        occupies smaller chip area, making it highly useful for embedded and VLSI systems.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal2" class="fixed inset-0 hidden bg-black bg-opacity-50 flex items-center justify-center z-50" onclick="closeModal('modal2')">
+    <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6" onclick="event.stopPropagation()">
+      <h2 class="text-xl font-bold mb-4">Python To-Do List Application</h2>
+      <p class="text-gray-700">
+        The To-Do List Application demonstrates Python programming concepts like data structures,
+        exception handling, and user interaction. It provides a simple and interactive way to manage
+        daily tasks directly from the terminal.
+      </p>
+    </div>
+  </div>
+
+  <!-- Internship -->
+  <section class="bg-gray-50 py-12">
+    <div class="container mx-auto px-6">
+      <h3 class="text-2xl font-bold mb-4">Internship</h3>
+      <p class="text-gray-700"><strong>Full Stack Web Development Intern</strong> (Aug–Sep 2024)</p>
+      <p class="mt-2 text-gray-600">Worked on front-end & back-end tasks, practiced deployment, and gained hands-on experience in building web applications.</p>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="container mx-auto px-6 py-12">
+    <h3 class="text-2xl font-bold mb-4">Certifications</h3>
+    <div class="space-y-2 text-gray-700">
+      <p>Full Stack Web Development Internship (2024)</p>
+      <p>Python Kaggle Certificate of Completion (Aug 2025)</p>
+    </div>
+  </section>
+
+ <!-- Contact -->
+<section id="contact" class="bg-gray-50 py-12">
+  <div class="container mx-auto px-6">
+    <h3 class="text-2xl font-bold mb-6 text-center">Contact Me</h3>
+
+    <form id="contactForm" class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow space-y-6">
+      
+      <!-- First & Last Name -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">First Name</label>
+          <input type="text" name="firstName" placeholder="Jane"
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring focus:ring-green-300 focus:outline-none" required>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Last Name</label>
+          <input type="text" name="lastName" placeholder="Doe"
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring focus:ring-green-300 focus:outline-none" required>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Email Address</label>
+        <input type="email" name="email" placeholder="jane@example.com"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring focus:ring-green-300 focus:outline-none" required>
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Message</label>
+        <textarea name="message" rows="4" placeholder="Enter your message here..."
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring focus:ring-green-300 focus:outline-none" required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit"
+          class="bg-green-600 text-white px-6 py-2 rounded-lg shadow hover:bg-green-700 transition">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("TeBGh0ApIAG0ciRgc"); // Replace with your EmailJS Public Key
+  })();
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_0bfi3zg", "template_3kv40pj", this)
+      .then(function () {
+        alert("✅ Message sent to sreedevibeere24@gmail.com!");
+      }, function (error) {
+        alert("❌ Failed to send message. Error: " + JSON.stringify(error));
+      });
+  });
+</script>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      
+      <!-- About Me -->
+      <div>
+        <h4 class="text-lg font-semibold mb-3">About Me</h4>
+        <p class="text-gray-400 text-sm">
+          Aspiring Software Engineer with skills in Python, MySQL, Data Structures, and OOP.  
+          Passionate about creating scalable and efficient solutions for real-world problems.
+        </p>
+      </div>
+
+      <!-- Contact Me -->
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Contact Me</h4>
+        <p class="text-gray-400 text-sm">📧 sreedevibeere24@gmail.com</p>
+        <p class="text-gray-400 text-sm">📞 +91 83310 26379</p>
+        <p class="text-gray-400 text-sm">📍 Dharmavaram, Ananthapur, Andhra Pradesh</p>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Social Media</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="https://www.linkedin.com/in/bsreedevi24/" target="_blank" class="hover:text-blue-400">LinkedIn</a></li>
+          <li><a href="https://github.com/sreedevi4g6" target="_blank" class="hover:text-gray-100">GitHub</a></li>
+          <li><a href="mailto:sreedevibeere24@gmail.com" class="hover:text-red-400">Email</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
+      © 2025 Beere Sreedevi. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.remove("hidden");
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.add("hidden");
+    }
+  </script>
+
+</body>
+</html>
